@@ -2,6 +2,7 @@ import logo from './Derpy_kitty.jpg';
 import './App.css';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
+import PortfolioContainer from './components/PortfolioContainer';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <div className="bigContainer">
         <img src={logo} className="App-logo" alt="logo" />
       </div>
+      < PortfolioContainer />
       <footer className="App-footer">
         < Footer />
       </footer>

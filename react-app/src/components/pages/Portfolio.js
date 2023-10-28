@@ -1,10 +1,10 @@
 import React from 'react';
-import challenge3 from '../../../src/images/challenge_3_thumbnail.png';
-import challenge5 from '../../../src/images/challenge_5_thumbnail.png';
-import challenge9 from '../../../src/images/challenge_9_thumbnail.png';
-import project1 from '../../../src/images/project_1_thumbnail.png';
-import project2 from '../../../src/images/project_2_thumbnail.png';
-import project3 from '../../../src/images/project_3_thumbnail.png';
+import challenge3 from '../../pics/challenge_3_thumbnail.png';
+import challenge5 from '../../pics/challenge_5_thumbnail.png';
+import challenge9 from '../../pics/challenge_9_thumbnail.png';
+import project1 from '../../pics/project_1_thumbnail.png';
+import project2 from '../../pics/project_2_thumbnail.png';
+import project3 from '../../pics/project_3_thumbnail.png';
 
 export default function Contact() {
   return (
