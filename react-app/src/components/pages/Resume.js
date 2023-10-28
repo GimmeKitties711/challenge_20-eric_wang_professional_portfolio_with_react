@@ -4,7 +4,7 @@ export default function Resume() {
     return (
         <div>
             <h1>Resume</h1>
-            <p>Download my resume</p>
+            <p>Download my resume (lmao I wish this was working)</p>
             <h3>Front-end skills</h3>
             <ul>
                 <li>HTML</li>

@@ -1,13 +1,15 @@
 import React from 'react';
 
-function Navigation({ currentPage, handlePageChange }) {
+function Navigation({ currentPage, handlePageChange }) { // destructure the props
     return (
         <ul>
             <li>
                 <a
                     href="#home"
                     onClick={() => handlePageChange('Home')}
+                    // this is similar to elem.addEventListener('click', function)
                     className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
+                    // if the current page is Home, then modify the appearance of the link with the active class
                 >
                     Home
                 </a>
@@ -43,4 +45,4 @@ function Navigation({ currentPage, handlePageChange }) {
     )
 }
 
-export default Navigation;
+export default Navigation; // always showing on page
