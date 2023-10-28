@@ -5,7 +5,7 @@ export default function Resume() {
         <div>
             <h1>Resume</h1>
             <p>Download my resume</p>
-            <h3>Front-end proficiencies</h3>
+            <h3>Front-end skills</h3>
             <ul>
                 <li>HTML</li>
                 <li>CSS</li>
@@ -15,7 +15,7 @@ export default function Resume() {
                 <li>React</li>
                 <li>Bootstrap</li>
             </ul>
-            <h3>Back-end proficiencies</h3>
+            <h3>Back-end skills</h3>
             <ul>
                 <li>APIs</li>
                 <li>Node</li>
