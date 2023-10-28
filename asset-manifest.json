@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/challenge_20-eric_wang_react_portfolio/static/css/main.5370e6ad.css",
+    "main.js": "/challenge_20-eric_wang_react_portfolio/static/js/main.d13d6b5b.js",
+    "static/js/787.b701888c.chunk.js": "/challenge_20-eric_wang_react_portfolio/static/js/787.b701888c.chunk.js",
+    "static/media/project_1_thumbnail.png": "/challenge_20-eric_wang_react_portfolio/static/media/project_1_thumbnail.981ecdac16786a4db178.png",
+    "static/media/project_3_thumbnail.png": "/challenge_20-eric_wang_react_portfolio/static/media/project_3_thumbnail.0864ad17360cea5cd69b.png",
+    "static/media/Derpy_kitty.jpg": "/challenge_20-eric_wang_react_portfolio/static/media/Derpy_kitty.48e0b50d79b7d86b2acc.jpg",
+    "static/media/project_2_thumbnail.png": "/challenge_20-eric_wang_react_portfolio/static/media/project_2_thumbnail.f73a05a78e507e09e741.png",
+    "static/media/challenge_9_thumbnail.png": "/challenge_20-eric_wang_react_portfolio/static/media/challenge_9_thumbnail.56cbec28a60ed10c2bcd.png",
+    "static/media/challenge_3_thumbnail.png": "/challenge_20-eric_wang_react_portfolio/static/media/challenge_3_thumbnail.4e171e90c36c82ffa4e0.png",
+    "static/media/challenge_5_thumbnail.png": "/challenge_20-eric_wang_react_portfolio/static/media/challenge_5_thumbnail.4265868b0268a48e2af8.png",
+    "index.html": "/challenge_20-eric_wang_react_portfolio/index.html",
+    "main.5370e6ad.css.map": "/challenge_20-eric_wang_react_portfolio/static/css/main.5370e6ad.css.map",
+    "main.d13d6b5b.js.map": "/challenge_20-eric_wang_react_portfolio/static/js/main.d13d6b5b.js.map",
+    "787.b701888c.chunk.js.map": "/challenge_20-eric_wang_react_portfolio/static/js/787.b701888c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5370e6ad.css",
+    "static/js/main.d13d6b5b.js"
+  ]
+}
