@@ -1,12 +1,13 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import resume from '../../../src/Resume-Eric_Wang.pdf';
 
 export default function Resume() {
     return (
         <div>
             <h1>Resume</h1>
-            <Link to="../../../src/Resume-Eric_Wang.pdf" target="_blank" download>
+            <Link to={resume} target="_blank" download="Resume-Eric_Wang">
                 <Button className="downloadBtn">Download my resume</Button>
             </Link>
             <h3>Front-end skills</h3>
@@ -32,3 +33,5 @@ export default function Resume() {
         </div>
     );
 }
+
+// source for how to create a file download button in React: https://stackoverflow.com/questions/55313748/download-file-by-clicking-a-button-in-reactjs
