@@ -96,6 +96,10 @@ body {
   color: white;
 }
 
+.hiddenUntilNeeded {
+  visibility: hidden;
+}
+
 .thumbnail {
   max-width: 300px;
 }
