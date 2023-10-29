@@ -103,3 +103,7 @@ body {
 .thumbnail {
   max-width: 300px;
 }
+
+.warning {
+  color: red;
+}

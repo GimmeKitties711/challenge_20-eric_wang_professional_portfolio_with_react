@@ -7,12 +7,18 @@ export default function Contact() {
 
     const handleSubmit = (e) => {
         e.preventDefault(); // prevents page from refreshing
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            document.querySelector('#email-empty-or-invalid-notif').classList.add('warning');
+            return;
+        }
     }
 
     const handleMouseEnterAll = (e) => {
         if (e.target.name === 'Name') {
             document.querySelector('#name-empty-notif').classList.add('hiddenUntilNeeded');
         } else if (e.target.name === 'Email') {
+            document.querySelector('#email-empty-or-invalid-notif').classList.remove('warning');
             document.querySelector('#email-empty-or-invalid-notif').classList.add('hiddenUntilNeeded');
         } else if (e.target.name === 'Message') {
             document.querySelector('#message-empty-notif').classList.add('hiddenUntilNeeded');
