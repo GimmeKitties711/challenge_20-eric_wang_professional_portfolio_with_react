@@ -1,3 +1,19 @@
+:root {
+  /* CSS HEX */
+  --persian-orange: #ea8c55ff;
+  --jasper: #c75146ff;
+  --fire-brick: #ad2e24ff;
+  --falu-red: #81171bff;
+  --rosewood: #540804ff;
+  /*
+  in a hex code with 8 digits, the last two digits represent the alpha channel. this channel indicates the transparency of the color. the value of this channel can be between 00 (completely transparent) and ff (completely opaque). in this case, all of the colors are completely opaque.
+
+  source: https://www.quackit.com/css/color/values/css_hex_color_notation_8_digits.cfm
+  */
+
+  /* this color palette was created with the help of Coolors: https://coolors.co/ */
+}
+
 .App {
   text-align: center;
 }
