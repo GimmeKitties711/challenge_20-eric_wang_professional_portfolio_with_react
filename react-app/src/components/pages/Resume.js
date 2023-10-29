@@ -1,10 +1,14 @@
 import React from 'react';
+import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 export default function Resume() {
     return (
         <div>
             <h1>Resume</h1>
-            <p>Download my resume (lmao I wish this was working)</p>
+            <Link to="../../../src/Resume-Eric_Wang.pdf" target="_blank" download>
+                <Button className="downloadBtn">Download my resume</Button>
+            </Link>
             <h3>Front-end skills</h3>
             <ul>
                 <li>HTML</li>
