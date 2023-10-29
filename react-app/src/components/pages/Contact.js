@@ -1,6 +1,6 @@
 import { React, useState, useRef } from 'react';
 import emailjs from '@emailjs/browser'
-//import { Link } from 'react-router-dom';
+//const nodeMailer = require('nodemailer');
 
 export default function Contact() {
     const [name, setName] = useState('');
@@ -8,6 +8,12 @@ export default function Contact() {
     const [message, setMessage] = useState('');
 
     const form = useRef();
+
+    const resetDefaultValues = () => {
+        setName('');
+        setEmail('');
+        setMessage('');
+    }
 
     const handleSubmit = (e) => {
         e.preventDefault(); // prevents page from refreshing
@@ -17,14 +23,15 @@ export default function Contact() {
             return;
         }
 
-        emailjs.sendForm(process.env.SERVICE_ID, process.env.TEMPLATE_ID, form.current, process.env.PUBLIC_KEY)
+        emailjs.sendForm("service_z5t00tf", "template_tu38g3b", form.current, "M0UpWdHRA02mFSk35")
         .then((result) => {
             console.log(result.text);
             console.log("Message sent successfully.");
-            e.target.reset();
         }, (error) => {
             console.log(error.text);
         });
+
+        resetDefaultValues();
     }
 
     const handleMouseEnterAll = (e) => {
@@ -65,6 +72,7 @@ export default function Contact() {
         <div className="formContainer">
             <form
                 ref={form}
+                id="contact-form"
                 onSubmit={handleSubmit}
             >
                 <h1>Contact Me</h1>
