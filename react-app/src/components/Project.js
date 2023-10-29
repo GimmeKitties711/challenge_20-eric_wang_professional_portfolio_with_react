@@ -5,7 +5,7 @@ export default function Project(props) {
     return (
         <div>
             <p>{props.title}</p>
-            <img src={props.imgSrc} alt={props.title}/>
+            <img src={props.imgSrc} class="thumbnail" alt={props.title}/>
             <Link to={props.repo} target="_blank" rel="noopener noreferrer">GitHub repo</Link>
             <Link to={props.deployed} target="_blank" rel="noopener noreferrer">Deployed application</Link>
         </div>

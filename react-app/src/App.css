@@ -78,5 +78,9 @@
 }
 
 .downloadBtn {
-  background-color: lawngreen
+  background-color: lawngreen;
+}
+
+.thumbnail {
+  max-width: 300px;
 }

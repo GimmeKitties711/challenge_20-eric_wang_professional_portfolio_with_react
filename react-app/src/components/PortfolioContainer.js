@@ -7,7 +7,7 @@ import Resume from './pages/Resume';
 
 export default function PortfolioContainer() {
     const [currentPage, setCurrentPage] = useState('About Me');
-    // render the hoe page by default (on page load)
+    // render the About Me (home) page by default (on page load)
 
     const renderPage = () => {
         // render a certain page based on currentPage
