@@ -11,6 +11,7 @@ root.render(
     <App />
   </BrowserRouter>
 );
+// source for why BrowserRouter needs to be used with Link: https://stackoverflow.com/questions/75728532/uncaught-typeerror-cannot-destructure-property-basename-of-react2-usecontext
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

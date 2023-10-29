@@ -1,45 +1,46 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Navigation({ currentPage, handlePageChange }) { // destructure the props
     return (
         <ul>
             <li>
-                <a
-                    href="#home"
-                    onClick={() => handlePageChange('Home')}
+                <Link
+                    to="#aboutme"
+                    onClick={() => handlePageChange('About Me')}
                     // this is similar to elem.addEventListener('click', function)
-                    className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
-                    // if the current page is Home, then modify the appearance of the link with the active class
+                    className={currentPage === 'About Me' ? 'nav-link active' : 'nav-link'}
+                    // if the current page is About Me, then modify the appearance of the link with the 'active' class
                 >
-                    Home
-                </a>
+                    About Me
+                </Link>
             </li>
             <li>
-                <a
-                    href="#portfolio"
+                <Link
+                    to="#portfolio"
                     onClick={() => handlePageChange('Portfolio')}
                     className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
                 >
                     Portfolio
-                </a>
+                </Link>
             </li>
             <li>
-                <a
-                    href="#contact"
+                <Link
+                    to="#contact"
                     onClick={() => handlePageChange('Contact')}
                     className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
                 >
                     Contact
-                </a>
+                </Link>
             </li>
             <li>
-                <a
-                    href="#resume"
+                <Link
+                    to="#resume"
                     onClick={() => handlePageChange('Resume')}
                     className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
                 >
                     Resume
-                </a>
+                </Link>
             </li>
         </ul>
     )

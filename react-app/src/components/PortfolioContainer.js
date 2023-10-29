@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
 import Navigation from './Navigation';
-import Home from './pages/Home';
+import AboutMe from './pages/AboutMe';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 
 export default function PortfolioContainer() {
-    const [currentPage, setCurrentPage] = useState('Home');
+    const [currentPage, setCurrentPage] = useState('About Me');
     // render the hoe page by default (on page load)
 
     const renderPage = () => {
         // render a certain page based on currentPage
-        if (currentPage === 'Home') {
-            return <Home />;
+        if (currentPage === 'About Me') {
+            return <AboutMe />;
         }
         if (currentPage === 'Portfolio') {
             return <Portfolio />;
@@ -23,7 +23,7 @@ export default function PortfolioContainer() {
         if (currentPage === 'Resume') {
             return <Resume />;
         }
-        return <Home />;
+        return <AboutMe />;
     };
 
     const handlePageChange = (page) => setCurrentPage(page);
