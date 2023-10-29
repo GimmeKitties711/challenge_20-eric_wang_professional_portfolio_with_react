@@ -12,6 +12,18 @@ export default function Contact() {
             document.querySelector('#email-empty-or-invalid-notif').classList.add('warning');
             return;
         }
+        // } else {
+        //     try {
+        //         const response = await axios.post('/send-email', {
+        //             name,
+        //             email,
+        //             message,
+        //         });
+        //         console.log(response.data);
+        //     } catch (error) {
+        //         console.error(error);
+        //     }
+        // }
     }
 
     const handleMouseEnterAll = (e) => {
@@ -51,7 +63,10 @@ export default function Contact() {
     return (
         <div>
             <h1>Contact Me</h1>
-            <form onSubmit={handleSubmit}>
+            <form
+                //action="mailto: eric20wang.wang@gmail.com"
+                onSubmit={handleSubmit}
+            >
                 <label>Name:</label>
                 <input
                     type="text"
