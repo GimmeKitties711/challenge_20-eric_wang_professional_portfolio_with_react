@@ -3,7 +3,7 @@ import React from 'react';
 export default function Contact() {
     return (
         <div>
-            <h1>Contact Page</h1>
+            <h1>Contact Me</h1>
             <form name="submitMessage" id="submit-message" method="post">
                 <div>Name:</div>
                 <input type="text" name="name" placeholder="Name" />

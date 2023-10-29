@@ -1,11 +1,13 @@
 import React from 'react';
+import profilePic from '../../../src/Derpy_kitty.jpg'
 
 export default function AboutMe() {
     return (
         <div>
             <h1>About Me</h1>
+            <img src={profilePic} alt="profile picture" />
             <p>
-                My name is Eric Wang and I am a full stack web developer. I know how to program using JavaScript and its related technologies, such as Express, MongoDB, and Node. Over my time in the bootcamp, I have built up quite a few projects in my GitHub repository, which can be found in the footer link that says 'GitHub'. You can also view my resume, contact information, and portfolio (6 projects) by clicking on the header options. I have done a lot of good individual and group projects, and I hope you will like them.
+                My name is Eric Wang and I am a full-stack web developer. I have learned how to program using JavaScript and its related technologies, such as Express, MongoDB, and Node. During my time in UC Berkeley's web development boot camp, I have published quite a few projects in my GitHub repository, which can be found through the link in the footer labeled 'GitHub'. You can also view samples from my portfolio, my contact information, and my resume by clicking on the corresponding header options. I hope you enjoy looking at my projects, and please feel free to submit a message if you have any questions for me.
             </p>
         </div>
     )

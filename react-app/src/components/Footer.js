@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function Footer() {
     return (
-        <footer>
+        <footer className="App-footer">
             <ul>
                 <li>
                     <Link to="https://github.com/GimmeKitties711" target="_blank" rel="noopener noreferrer">GitHub</Link>
