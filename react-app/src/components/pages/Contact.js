@@ -1,9 +1,13 @@
-import { React, useState } from 'react';
+import { React, useState, useRef } from 'react';
+import emailjs from '@emailjs/browser'
+//import { Link } from 'react-router-dom';
 
 export default function Contact() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
+
+    const form = useRef();
 
     const handleSubmit = (e) => {
         e.preventDefault(); // prevents page from refreshing
@@ -12,18 +16,15 @@ export default function Contact() {
             document.querySelector('#email-empty-or-invalid-notif').classList.add('warning');
             return;
         }
-        // } else {
-        //     try {
-        //         const response = await axios.post('/send-email', {
-        //             name,
-        //             email,
-        //             message,
-        //         });
-        //         console.log(response.data);
-        //     } catch (error) {
-        //         console.error(error);
-        //     }
-        // }
+
+        emailjs.sendForm(process.env.SERVICE_ID, process.env.TEMPLATE_ID, form.current, process.env.PUBLIC_KEY)
+        .then((result) => {
+            console.log(result.text);
+            console.log("Message sent successfully.");
+            e.target.reset();
+        }, (error) => {
+            console.log(error.text);
+        });
     }
 
     const handleMouseEnterAll = (e) => {
@@ -61,18 +62,19 @@ export default function Contact() {
     }
 
     return (
-        <div>
-            <h1>Contact Me</h1>
+        <div className="formContainer">
             <form
-                //action="mailto: eric20wang.wang@gmail.com"
+                ref={form}
                 onSubmit={handleSubmit}
             >
+                <h1>Contact Me</h1>
                 <label>Name:</label>
                 <input
                     type="text"
                     required
                     placeholder="Name"
                     name="Name"
+                    id="name"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     onMouseEnter={handleMouseEnterAll}
@@ -81,10 +83,11 @@ export default function Contact() {
                 <p id="name-empty-notif" className="hiddenUntilNeeded">Please enter a name.</p>
                 <label>Email:</label>
                 <input
-                    type="text"
+                    type="email"
                     required
                     placeholder="Email"
                     name="Email"
+                    id="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     onMouseEnter={handleMouseEnterAll}
@@ -94,8 +97,10 @@ export default function Contact() {
                 <p id="email-empty-or-invalid-notif" className="hiddenUntilNeeded"></p>
                 <label>Message:</label>
                 <textarea
+                    rows="4"
                     placeholder="Message"
                     name="Message"
+                    id="message"
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                     onMouseEnter={handleMouseEnterAll}
@@ -103,11 +108,11 @@ export default function Contact() {
                 >
                 </textarea>
                 <p id="message-empty-notif" className="hiddenUntilNeeded">Please enter a message.</p>
-                <button
+                <input
                     type="submit"
-                >
-                    Submit
-                </button>
+                    value="Send"
+                    id="submitBtn"
+                />
             </form>
         </div>
     );

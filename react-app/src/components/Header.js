@@ -30,7 +30,7 @@ export default function Header() {
 
     return (
         <div>
-            <header class="App-header">
+            <header className="App-header">
             <h1>Eric Wang</h1>
             <h2>GimmeKitties711</h2>
             <img src={profilePic} className="App-logo" alt="profile picture" />
