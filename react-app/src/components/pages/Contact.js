@@ -1,6 +1,14 @@
 import { React, useState, useRef } from 'react';
 import emailjs from '@emailjs/browser'
-//const nodeMailer = require('nodemailer');
+
+/*
+sources that helped me write this code:
+
+1. How to write forms in React: https://www.youtube.com/watch?v=IkMND33x0qQ
+2. Submit events in React: https://www.youtube.com/watch?v=pJiRj02PkJQ
+3. How to use emailjs to send an email from a contact form: https://www.youtube.com/watch?v=bMq2riFCF90
+4. emailjs documentation: https://www.emailjs.com/docs/examples/reactjs/
+*/
 
 export default function Contact() {
     const [name, setName] = useState('');
