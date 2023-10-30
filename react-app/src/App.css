@@ -21,6 +21,7 @@
   --border-radius: 5px;
   --border-smaller: 3px solid saddlebrown;
   --border-radius-smaller: 3px;
+  --border-radius-bigger: 10px;
 }
 
 body {
@@ -115,6 +116,16 @@ body {
   margin-right: 20px;
 }
 
+#portfolio-title {
+  text-align: center;
+}
+
+.portfolioContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .nav-link {
   color: var(--persian-orange);
   font-weight: bold;
@@ -151,6 +162,42 @@ body {
   justify-content: center;
   font-size: calc(7px + 2vmin);
 }
+
+.projectElem {
+  display: block;
+  font-weight: bold;
+}
+
+.projectTitle {
+  margin: 0 10px 5px 10px;
+}
+
+.projectContainer {
+  background-color: var(--fire-brick);
+  border: var(--border);
+  border-radius: var(--border-radius-bigger);
+  margin: 10px;
+  padding: 5px;
+}
+
+.hiddenUntilNeeded {
+  visibility: hidden;
+}
+
+.thumbnail {
+  max-width: 300px;
+}
+
+.warning {
+  color: var(--rosewood);
+}
+
+
+
+
+
+
+
 
 .formContainer {
   width: 100%;
@@ -196,16 +243,4 @@ form button {
   width: 150px;
   margin: 20px auto 0;
   border-radius: 30px;
-}
-
-.hiddenUntilNeeded {
-  visibility: hidden;
-}
-
-.thumbnail {
-  max-width: 300px;
-}
-
-.warning {
-  color: var(--rosewood);
 }
