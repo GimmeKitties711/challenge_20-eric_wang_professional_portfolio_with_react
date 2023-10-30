@@ -1,5 +1,5 @@
 import React from 'react';
-import profilePic from '../../../src/Derpy_kitty.jpg'
+import profilePic from '../../../src/pics/Derpy_kitty.jpg'
 
 export default function AboutMe() {
     return (

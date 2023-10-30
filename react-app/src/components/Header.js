@@ -4,7 +4,7 @@ import AboutMe from './pages/AboutMe';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
-import profilePic from '../../src/Derpy_kitty_with_background_cropped.png';
+import profilePic from '../../src/pics/Derpy_kitty_with_background_cropped.png';
 
 export default function Header() {
     const [currentPage, setCurrentPage] = useState('About Me');
