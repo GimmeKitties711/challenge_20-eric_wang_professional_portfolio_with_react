@@ -2,6 +2,7 @@
   --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
   sans-serif;
+
   /* CSS HEX */
   --persian-orange: #ea8c55ff;
   --jasper: #c75146ff;
@@ -31,10 +32,10 @@ body {
   background-color: var(--jasper);
 }
 
-.notResume { /* I want the resume to have bullet points but I do not want them anywhere else */
+.notResume { /* I want the resume section to have bullet points but I do not want them anywhere else */
   display: flex;
   list-style-type: none;
-  /* removes the bullet points from the unordered list, source: https://getcssscan.com/blog/how-to-remove-bullets-from-li-css */
+  /* remove the bullet points from the unordered list, source: https://getcssscan.com/blog/how-to-remove-bullets-from-li-css */
 }
 
 #header-list {

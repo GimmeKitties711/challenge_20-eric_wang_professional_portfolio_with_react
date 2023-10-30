@@ -43,5 +43,6 @@ export default function Resume() {
         </div>
     );
 }
+// I used the front-end and back-end skills that were provided as examples in the challenge instructions, but I also added general skills that I think are important for a developer to have
 
 // source for how to create a file download button in React: https://stackoverflow.com/questions/55313748/download-file-by-clicking-a-button-in-reactjs

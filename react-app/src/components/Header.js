@@ -6,7 +6,7 @@ import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 import profilePic from '../../src/pics/Derpy_kitty_with_background_cropped.png';
 
-export default function Header() {
+export default function Header() { // always showing on page
     const [currentPage, setCurrentPage] = useState('About Me');
 
     const renderPage = () => {
@@ -35,13 +35,14 @@ export default function Header() {
                 <header className="App-header">
                     <h1 id="real-name" className="names">Eric Wang</h1>
                     <h2 className="names">GimmeKitties711</h2>
-                    {/* pass in the props to be used by the Navigation function in ./Navigation.js */}
+                    {/* pass in the props to be used by the Navigation() function in ./Navigation.js */}
                     <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
                 </header>
             </div>
             <div className="contentContainer">
+                {/* render the selected page */}
                 {renderPage()}
             </div>
-        </div> 
+        </div>
     );
 }

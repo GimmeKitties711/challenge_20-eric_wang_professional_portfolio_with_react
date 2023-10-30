@@ -1,5 +1,5 @@
 import React from 'react';
-import Project from '../Project'
+import Project from '../Project';
 
 import challenge6 from '../../pics/challenge_6_thumbnail.png';
 import challenge11 from '../../pics/challenge_11_thumbnail.png';
@@ -27,3 +27,5 @@ export default function Contact() {
         </div>
     );
 }
+
+// Challenges 6, 11, 21 on the left, Projects 1, 2, 3 on the right until the screen is small enough that they stack on top of each other

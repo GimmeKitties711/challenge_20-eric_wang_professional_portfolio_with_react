@@ -46,4 +46,4 @@ function Navigation({ currentPage, handlePageChange }) { // destructure the prop
     )
 }
 
-export default Navigation; // always showing on page
+export default Navigation; // always showing on page, as it is part of Header
