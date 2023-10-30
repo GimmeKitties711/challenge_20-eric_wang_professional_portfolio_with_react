@@ -27,7 +27,6 @@ export default function Contact() {
         e.preventDefault(); // prevents page from refreshing
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(email)) {
-            document.querySelector('#email-empty-or-invalid-notif').classList.add('warning');
             return;
         }
 
@@ -44,11 +43,13 @@ export default function Contact() {
 
     const handleMouseEnterAll = (e) => {
         if (e.target.name === 'Name') {
+            document.querySelector('#name-empty-notif').classList.remove('revealed');
             document.querySelector('#name-empty-notif').classList.add('hiddenUntilNeeded');
         } else if (e.target.name === 'Email') {
-            document.querySelector('#email-empty-or-invalid-notif').classList.remove('warning');
+            document.querySelector('#email-empty-or-invalid-notif').classList.remove('revealed');
             document.querySelector('#email-empty-or-invalid-notif').classList.add('hiddenUntilNeeded');
         } else if (e.target.name === 'Message') {
+            document.querySelector('#message-empty-notif').classList.remove('revealed');
             document.querySelector('#message-empty-notif').classList.add('hiddenUntilNeeded');
         }
     }
@@ -57,8 +58,10 @@ export default function Contact() {
         if (e.target.value === '') {
             if (e.target.name === 'Name') {
                 document.querySelector('#name-empty-notif').classList.remove('hiddenUntilNeeded');
+                document.querySelector('#name-empty-notif').classList.add('revealed');
             } else if (e.target.name === 'Message') {
                 document.querySelector('#message-empty-notif').classList.remove('hiddenUntilNeeded');
+                document.querySelector('#message-empty-notif').classList.add('revealed');
             }
         }
     }
@@ -67,17 +70,19 @@ export default function Contact() {
         if (e.target.value === '') {
             document.querySelector('#email-empty-or-invalid-notif').textContent = 'Please enter an email address.';
             document.querySelector('#email-empty-or-invalid-notif').classList.remove('hiddenUntilNeeded');
+            document.querySelector('#email-empty-or-invalid-notif').classList.add('revealed');
         } else {
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!emailRegex.test(e.target.value)) {
                 document.querySelector('#email-empty-or-invalid-notif').textContent = 'Please enter a valid email address.';
                 document.querySelector('#email-empty-or-invalid-notif').classList.remove('hiddenUntilNeeded');
+                document.querySelector('#email-empty-or-invalid-notif').classList.add('revealed');
             }
         }
     }
 
     return (
-        <div className="formContainer">
+        <div className="sectionContainer formContainer">
             <form
                 ref={form}
                 id="contact-form"
@@ -96,7 +101,7 @@ export default function Contact() {
                     onMouseEnter={handleMouseEnterAll}
                     onMouseLeave={handleMouseLeaveNotEmail}
                 ></input>
-                <p id="name-empty-notif" className="hiddenUntilNeeded">Please enter a name.</p>
+                <p id="name-empty-notif" className="warningMessage hiddenUntilNeeded">Please enter a name.</p>
                 <label>Email:</label>
                 <input
                     type="email"
@@ -110,7 +115,7 @@ export default function Contact() {
                     onMouseLeave={handleMouseLeaveEmail}
                 >
                 </input>
-                <p id="email-empty-or-invalid-notif" className="hiddenUntilNeeded"></p>
+                <p id="email-empty-or-invalid-notif" className="warningMessage hiddenUntilNeeded">Please enter an email address.</p>
                 <label>Message:</label>
                 <textarea
                     rows="4"
@@ -123,7 +128,7 @@ export default function Contact() {
                     onMouseLeave={handleMouseLeaveNotEmail}
                 >
                 </textarea>
-                <p id="message-empty-notif" className="hiddenUntilNeeded">Please enter a message.</p>
+                <p id="message-empty-notif" className="warningMessage hiddenUntilNeeded">Please enter a message.</p>
                 <input
                     type="submit"
                     value="Send"

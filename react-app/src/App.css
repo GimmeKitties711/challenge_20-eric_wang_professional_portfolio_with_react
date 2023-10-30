@@ -22,6 +22,8 @@
   --border-smaller: 3px solid saddlebrown;
   --border-radius-smaller: 3px;
   --border-radius-bigger: 10px;
+  --form-border: 3px darkslategrey solid;
+  --form-label-color: darkslategrey;
 }
 
 body {
@@ -182,15 +184,26 @@ body {
 
 .hiddenUntilNeeded {
   visibility: hidden;
+  font-weight: 700;
+  margin: 0;
+}
+
+.revealed {
+  visibility: visible;
+  font-weight: 700;
+  margin: 0;
 }
 
 .thumbnail {
   max-width: 300px;
 }
 
-.warning {
+.warningMessage {
   color: var(--rosewood);
+  font-weight: 700;
+  margin: 0;
 }
+
 
 
 
@@ -201,14 +214,14 @@ body {
 
 .formContainer {
   width: 100%;
-  height: 100vh;
+  height: 120vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 form {
-  background-color: grey;
+  background-color: orangered;
   display: flex;
   flex-direction: column;
   padding: 2vw 4vw;
@@ -218,29 +231,39 @@ form {
 }
 
 form h1 {
-  color: #555555;
+  color: var(--form-label-color);
   font-weight: 800;
   margin-bottom: 20px;
 }
 
-form input, form textarea {
-  border: 0;
-  margin: 10px 0;
-  padding: 20px;
-  outline: none;
-  background: #f5f5f5;
-  font-size: 16px;
+label {
+  color: var(--form-label-color);
+  font-weight: 700;
 }
 
-form button {
+form input, form textarea {
+  border: var(--form-border);
+  border-radius: var(--border-radius);
+  margin: 10px 0;
+  padding: 20px;
+  background: #f5f5f5;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#submitBtn {
   padding: 15px;
-  background-color: #ff5361;
-  color: #ffffff;
-  font-size: 18px;
+  background-color: var(--fire-brick);
+  color: #f5f5f5;
+  font-size: 20px;
   border: 0;
-  outline: none;
+  outline: none; /* no outline is drawn outside of the border, source: https://www.w3schools.com/cssref/pr_outline.php */
   cursor: pointer;
   width: 150px;
-  margin: 20px auto 0;
+  margin: 20px auto 0; /* top, right and left, bottom */
   border-radius: 30px;
+}
+
+#submitBtn:hover {
+  background-color: var(--falu-red);
 }
