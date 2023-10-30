@@ -33,7 +33,7 @@ export default function Header() {
             <div className="headerComponentsContainer">
                 <img src={profilePic} className="spinner" alt="profile pic" />
                 <header className="App-header">
-                    <h1 className="names">Eric Wang</h1>
+                    <h1 id="real-name" className="names">Eric Wang</h1>
                     <h2 className="names">GimmeKitties711</h2>
                     {/* pass in the props to be used by the Navigation function in ./Navigation.js */}
                     <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />

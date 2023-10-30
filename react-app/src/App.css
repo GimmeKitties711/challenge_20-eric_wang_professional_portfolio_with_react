@@ -37,6 +37,10 @@ body {
   /* removes the bullet points from the unordered list, source: https://getcssscan.com/blog/how-to-remove-bullets-from-li-css */
 }
 
+#header-list {
+  margin: 25px;
+}
+
 .App {
   align-items: left;
 }
@@ -67,11 +71,23 @@ body {
   display: flex;
 }
 
+@media only screen and (max-width: 800px) {
+  .headerComponentsContainer, #header-list {
+    display: block;
+  }
+  .names {
+    font-size: 1em;
+  }
+  #real-name {
+    margin-top: 50px;
+  }
+}
+
 .App-header {
   flex-grow: 1;
   display: inline-block;
   width: 50%;
-  min-height: 50vh;
+  min-height: 40vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -93,7 +109,7 @@ body {
 }
 
 #about-me-title {
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 #about-me-profile-pic {
@@ -107,6 +123,15 @@ body {
   padding: 5px;
   border: var(--border);
   border-radius: var(--border-radius);
+}
+
+@media only screen and (max-width: 450px) {
+  #about-me-title {
+    margin-left: 20px;
+  }
+  #about-me-profile-pic, #about-me-paragraph {
+    max-width: 250px;
+  }
 }
 
 .bigContainer {

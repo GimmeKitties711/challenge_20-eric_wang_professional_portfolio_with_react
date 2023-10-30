@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function Navigation({ currentPage, handlePageChange }) { // destructure the props
     return (
-        <ul className="notResume">
+        <ul id="header-list" className="notResume">
             <li>
                 <Link
                     to="#aboutme"
