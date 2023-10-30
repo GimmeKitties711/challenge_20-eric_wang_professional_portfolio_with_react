@@ -5,6 +5,8 @@
   --fire-brick: #ad2e24ff;
   --falu-red: #81171bff;
   --rosewood: #540804ff;
+  --border: 5px solid saddlebrown;
+  --border-radius: 5px;
   /*
   in a hex code with 8 digits, the last two digits represent the alpha channel. this channel indicates the transparency of the color. the value of this channel can be between 00 (completely transparent) and ff (completely opaque). in this case, all of the colors are completely opaque.
 
@@ -15,64 +17,34 @@
 }
 
 body {
-  background-color: #282c34;
+  color: var(--persian-orange);
+  background-color: var(--jasper);
+}
+
+.notResume {
+  display: flex;
+  list-style-type: none;
+  /* removes the bullet points from the unordered list, source: https://getcssscan.com/blog/how-to-remove-bullets-from-li-css */
 }
 
 .App {
-  text-align: center;
+  align-items: left;
 }
 
-.App-logo {
+.spinner {
+  display: inline-block;
   height: 40vmin;
   pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .spinner {
+    animation: Profile-pic-spin infinite 20s linear;
   }
+  /* spin the profile picture 18 degrees per second without changing speed or stopping */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 75vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-footer {
-  background-color: #282c34;
-  min-height: 10vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(5px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-.bigContainer {
-  background-color: #282c34;
-  min-height: 500px;
-}
-
-.nav-link {
-  color: white;
-}
-
-.active {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes Profile-pic-spin {
   from {
     transform: rotate(0deg);
   }
@@ -81,19 +53,87 @@ body {
   }
 }
 
+.headerComponentsContainer {
+  display: flex;
+}
+
+.App-header {
+  flex-grow: 1;
+  display: inline-block;
+  width: 50%;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.names {
+  margin: 0;
+}
+
+.App-footer {
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(5px + 2vmin);
+}
+
+#about-me-title {
+  margin-top: 40px;
+}
+
+#about-me-profile-pic {
+  max-width: 400px;
+  border: var(--border);
+  border-radius: var(--border-radius);
+}
+
+#about-me-paragraph {
+  background-color: var(--fire-brick);
+  padding: 5px;
+  border: var(--border);
+  border-radius: var(--border-radius);
+}
+
+.bigContainer {
+  min-height: 500px;
+}
+
+.sectionContainer {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.nav-link {
+  color: var(--persian-orange);
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.nav-link:hover {
+  color: var(--falu-red);
+}
+
+.active {
+  color: var(--falu-red);
+}
+
 .downloadBtn {
   background-color: lawngreen;
 }
 
 .contentContainer {
-  background-color: #282c34;
   min-height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(7px + 2vmin);
-  color: white;
 }
 
 .formContainer {
@@ -152,5 +192,5 @@ form button {
 }
 
 .warning {
-  color: red;
+  color: var(--rosewood);
 }

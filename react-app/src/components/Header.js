@@ -4,7 +4,7 @@ import AboutMe from './pages/AboutMe';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
-import profilePic from '../../src/Derpy_kitty.jpg';
+import profilePic from '../../src/Derpy_kitty_with_background_cropped.png';
 
 export default function Header() {
     const [currentPage, setCurrentPage] = useState('About Me');
@@ -30,13 +30,15 @@ export default function Header() {
 
     return (
         <div>
-            <header className="App-header">
-            <h1>Eric Wang</h1>
-            <h2>GimmeKitties711</h2>
-            <img src={profilePic} className="App-logo" alt="profile picture" />
-            {/* pass in the props to be used by the Navigation function in ./Navigation.js */}
-            <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
-            </header>
+            <div className="headerComponentsContainer">
+                <img src={profilePic} className="spinner" alt="profile picture" />
+                <header className="App-header">
+                    <h1 class="names">Eric Wang</h1>
+                    <h2 class="names">GimmeKitties711</h2>
+                    {/* pass in the props to be used by the Navigation function in ./Navigation.js */}
+                    <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
+                </header>
+            </div>
             <div className="contentContainer">
                 {renderPage()}
             </div>
