@@ -1,12 +1,14 @@
 :root {
+  --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
   /* CSS HEX */
   --persian-orange: #ea8c55ff;
   --jasper: #c75146ff;
   --fire-brick: #ad2e24ff;
   --falu-red: #81171bff;
   --rosewood: #540804ff;
-  --border: 5px solid saddlebrown;
-  --border-radius: 5px;
+
   /*
   in a hex code with 8 digits, the last two digits represent the alpha channel. this channel indicates the transparency of the color. the value of this channel can be between 00 (completely transparent) and ff (completely opaque). in this case, all of the colors are completely opaque.
 
@@ -14,6 +16,11 @@
   */
 
   /* this color palette was created with the help of Coolors: https://coolors.co/ */
+
+  --border: 5px solid saddlebrown;
+  --border-radius: 5px;
+  --border-smaller: 3px solid saddlebrown;
+  --border-radius-smaller: 3px;
 }
 
 body {
@@ -21,7 +28,7 @@ body {
   background-color: var(--jasper);
 }
 
-.notResume {
+.notResume { /* I want the resume to have bullet points but I do not want them anywhere else */
   display: flex;
   list-style-type: none;
   /* removes the bullet points from the unordered list, source: https://getcssscan.com/blog/how-to-remove-bullets-from-li-css */
@@ -124,7 +131,16 @@ body {
 }
 
 .downloadBtn {
-  background-color: lawngreen;
+  background-color: var(--fire-brick);
+  color: var(--persian-orange);
+  font-weight: bold;
+  font-family: var(--font-family);
+  border: var(--border-smaller);
+  border-radius: var(--border-radius-smaller);
+}
+
+.downloadBtn:hover {
+  background-color: var(--falu-red);
 }
 
 .contentContainer {
@@ -139,7 +155,6 @@ body {
 .formContainer {
   width: 100%;
   height: 100vh;
-  background-color: #001660;
   display: flex;
   align-items: center;
   justify-content: center;

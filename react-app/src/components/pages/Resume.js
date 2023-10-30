@@ -5,7 +5,7 @@ import resume from '../../../src/Resume-Eric_Wang.pdf';
 
 export default function Resume() {
     return (
-        <div>
+        <div className="sectionContainer">
             <h1>Resume</h1>
             <Link to={resume} target="_blank" download="Resume-Eric_Wang">
                 <Button className="downloadBtn">Download my resume</Button>
@@ -16,7 +16,7 @@ export default function Resume() {
                 <li>CSS</li>
                 <li>JavaScript</li>
                 <li>JQuery</li>
-                <li>responsive design</li>
+                <li>Responsive design</li>
                 <li>React</li>
                 <li>Bootstrap</li>
             </ul>
@@ -29,6 +29,16 @@ export default function Resume() {
                 <li>MongoDB, Mongoose</li>
                 <li>REST</li>
                 <li>GraphQL</li>
+            </ul>
+            <h3>General skills</h3>
+            <ul>
+                <li>Asking questions</li>
+                <li>Documentation</li>
+                <li>Proofreading</li>
+                <li>Teamwork</li>
+                <li>Testing</li>
+                <li>Troubleshooting</li>
+                <li>Writing comments</li>
             </ul>
         </div>
     );
