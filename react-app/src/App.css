@@ -249,6 +249,12 @@ body {
   justify-content: center;
 }
 
+@media only screen and (max-width: 710px) {
+  .formContainer {
+    width: 90%;
+  }
+}
+
 form {
   background-color: orangered;
   display: flex;
