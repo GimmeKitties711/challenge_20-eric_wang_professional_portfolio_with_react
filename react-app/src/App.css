@@ -223,6 +223,16 @@ body {
   max-width: 300px;
 }
 
+@media only screen and (max-width: 360px) {
+  .projectContainer {
+    max-width: 250px;
+    margin-left: 10px;
+  }
+  .thumbnail {
+    max-width: 250px;
+  }
+}
+
 .warningMessage {
   color: var(--rosewood);
   font-weight: 700;
