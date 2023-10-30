@@ -1,7 +1,5 @@
 # Challenge 20
 
-![GitHub license](https://img.shields.io/badge/License-MIT-yellow.svg)
-
 ## Description
 Professional thingies are very important so employers can see all your goodie thingies.
 
@@ -16,10 +14,13 @@ Professional thingies are very important so employers can see all your goodie th
 - [Questions](#questions)
 
 ## Installation
-Run package.json
+Open the `package.json` file in the Integrated Terminal and run `npm install` to install the following packages:
+
+**Normal dependencies:**
+
 
 ## Usage
-deployed application can be found [here](https://gimmekitties711.github.io/challenge_20-eric_wang_professional_portfolio_with_react/)
+The deployed application can be found [here](https://gimmekitties711.github.io/challenge_20-eric_wang_react_portfolio/).
 
 Screenshots:
 
@@ -29,9 +30,10 @@ Screenshots:
 ![thingy4](Assets/Screenshot%20(952).png)
 
 ## Credits
-Received assistance from Michael Seaman and Robbert Wijtman.
+Received assistance in Slack from students Kevin Smith and Michael Taraschi, TA Michael Seaman, and instructor Robbert Wijtman.
 
-Sources:
+The following web resources helped me write the code for this project:
+
 
 https://youtu.be/wfGjDGpPVg4?si=zMjoXgOdPmwZBl1N
 https://youtu.be/nRDjGOVUqCM?si=qJKeRSe6-EN-qMYx
@@ -39,13 +41,13 @@ https://youtu.be/7-Iy4jtaHBc?si=nDm8wRBXojLIOKnU
 https://youtu.be/jgB6hGQ-_zw?si=5nGq_jeNzI6AJR3M
 
 ## Contributing
-N/A
+The form does not work as I would like it to. The warning message appear when the cursor leaves the input fields, but they do not disappear when the user begins typing text. If someone could help me resolve this issue, I would greatly appreciate it.
 
 ## Tests
-N/A
+No tests have been written for this application.
 
 ## License
-This project was created using the MIT License. More information about the license can be found [here](https://opensource.org/license/mit/).
+No license is attached to this repository.
 
 ## Questions
 If you have any questions for me, you can [follow me on GitHub](https://github.com/GimmeKitties711) or email me at eric20wang.wang@gmail.com.
