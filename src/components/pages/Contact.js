@@ -38,7 +38,7 @@ export default function Contact() {
         setName('');
         setEmail('');
         setMessage('');
-    } // this function is called after the form is submitted to clear the fields
+    } // this function is called after the form is submitted to clear the fields and hide any warning messages
 
     const handleSubmit = (e) => {
         e.preventDefault(); // prevent page from refreshing
@@ -72,7 +72,7 @@ export default function Contact() {
             document.querySelector('#message-empty-notif').classList.add('hiddenUntilNeeded');
             // hide warning message about empty message
         }
-    }
+    } // for the sake of brevity, this function's name only describes what happens when the mouse enters the fields, but it is also used to hide the warning messages when the user types in the fields
 
     const handleMouseLeaveNotEmail = (e) => { // mouse leaves name or message fields
         if (e.target.value === '') { // if the field is empty
@@ -120,7 +120,10 @@ export default function Contact() {
                     name="Name"
                     id="name"
                     value={name}
-                    onChange={(e) => setName(e.target.value)}
+                    onChange={(e) => {
+                        setName(e.target.value);
+                        handleMouseEnterAll(e);
+                    }}
                     onMouseEnter={handleMouseEnterAll}
                     onMouseLeave={handleMouseLeaveNotEmail}
                 ></input>
@@ -133,7 +136,10 @@ export default function Contact() {
                     name="Email"
                     id="email"
                     value={email}
-                    onChange={(e) => setEmail(e.target.value)}
+                    onChange={(e) => {
+                        setEmail(e.target.value);
+                        handleMouseEnterAll(e);
+                    }}
                     onMouseEnter={handleMouseEnterAll}
                     onMouseLeave={handleMouseLeaveEmail}
                 >
@@ -142,11 +148,15 @@ export default function Contact() {
                 <label>Message:</label>
                 <textarea
                     rows="4"
+                    required
                     placeholder="Message"
                     name="Message"
                     id="message"
                     value={message}
-                    onChange={(e) => setMessage(e.target.value)}
+                    onChange={(e) => {
+                        setMessage(e.target.value);
+                        handleMouseEnterAll(e);
+                    }}
                     onMouseEnter={handleMouseEnterAll}
                     onMouseLeave={handleMouseLeaveNotEmail}
                 >

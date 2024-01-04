@@ -68,7 +68,7 @@ The following web resources helped me write the code for this project:
 14. [EmailJS documentation](https://www.emailjs.com/docs/examples/reactjs/)
 
 ## Contributing
-The contact form does not work the way I want it to. The warning messages appear when the cursor leaves the input fields, but they do not disappear if the user begins typing text with the cursor outside. If someone could help me resolve this issue, I would very much appreciate it.
+No contribution is necessary for this project.
 
 ## Tests
 No tests have been written for this application.
