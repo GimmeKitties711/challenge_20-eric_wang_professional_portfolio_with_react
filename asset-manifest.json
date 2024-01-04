@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/challenge_20-eric_wang_react_portfolio/static/css/main.e70ab1dd.css",
-    "main.js": "/challenge_20-eric_wang_react_portfolio/static/js/main.053bfe77.js",
+    "main.js": "/challenge_20-eric_wang_react_portfolio/static/js/main.3418e6a7.js",
     "static/js/787.b701888c.chunk.js": "/challenge_20-eric_wang_react_portfolio/static/js/787.b701888c.chunk.js",
     "static/media/project_3_thumbnail.png": "/challenge_20-eric_wang_react_portfolio/static/media/project_3_thumbnail.9470769fc9af307f7647.png",
     "static/media/project_1_thumbnail.png": "/challenge_20-eric_wang_react_portfolio/static/media/project_1_thumbnail.ae1c8da8f134ab1b8787.png",
     "static/media/challenge_21_thumbnail.png": "/challenge_20-eric_wang_react_portfolio/static/media/challenge_21_thumbnail.5254a924900ba0b38d13.png",
     "static/media/project_2_thumbnail.png": "/challenge_20-eric_wang_react_portfolio/static/media/project_2_thumbnail.4066ba458d70a10b4e22.png",
     "static/media/Derpy_kitty_with_background_cropped.png": "/challenge_20-eric_wang_react_portfolio/static/media/Derpy_kitty_with_background_cropped.7650d2b872db00ba515f.png",
-    "static/media/Resume-Eric_Wang.pdf": "/challenge_20-eric_wang_react_portfolio/static/media/Resume-Eric_Wang.6ed1bd2fd57017e27110.pdf",
+    "static/media/Resume-Eric_Wang.pdf": "/challenge_20-eric_wang_react_portfolio/static/media/Resume-Eric_Wang.d9fd17ffa58de266c037.pdf",
     "static/media/challenge_6_thumbnail.png": "/challenge_20-eric_wang_react_portfolio/static/media/challenge_6_thumbnail.c0e43b191cc9fa9e9a8d.png",
     "static/media/Derpy_kitty.jpg": "/challenge_20-eric_wang_react_portfolio/static/media/Derpy_kitty.48e0b50d79b7d86b2acc.jpg",
     "static/media/challenge_11_thumbnail.png": "/challenge_20-eric_wang_react_portfolio/static/media/challenge_11_thumbnail.21ac609741fd123f9bf7.png",
     "index.html": "/challenge_20-eric_wang_react_portfolio/index.html",
     "main.e70ab1dd.css.map": "/challenge_20-eric_wang_react_portfolio/static/css/main.e70ab1dd.css.map",
-    "main.053bfe77.js.map": "/challenge_20-eric_wang_react_portfolio/static/js/main.053bfe77.js.map",
+    "main.3418e6a7.js.map": "/challenge_20-eric_wang_react_portfolio/static/js/main.3418e6a7.js.map",
     "787.b701888c.chunk.js.map": "/challenge_20-eric_wang_react_portfolio/static/js/787.b701888c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e70ab1dd.css",
-    "static/js/main.053bfe77.js"
+    "static/js/main.3418e6a7.js"
   ]
 }
