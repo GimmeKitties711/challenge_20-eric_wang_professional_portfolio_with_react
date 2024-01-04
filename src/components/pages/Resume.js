@@ -10,36 +10,38 @@ export default function Resume() {
             <Link to={resume} target="_blank" download="Resume-Eric_Wang">
                 <Button className="downloadBtn">Download my resume</Button>
             </Link>
-            <h3>Front-end skills</h3>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>JQuery</li>
-                <li>Responsive design</li>
-                <li>React</li>
-                <li>Bootstrap</li>
-            </ul>
-            <h3>Back-end skills</h3>
-            <ul>
-                <li>APIs</li>
-                <li>Node</li>
-                <li>Express</li>
-                <li>MySQL, Sequelize</li>
-                <li>MongoDB, Mongoose</li>
-                <li>REST</li>
-                <li>GraphQL</li>
-            </ul>
-            <h3>General skills</h3>
-            <ul>
-                <li>Asking questions</li>
-                <li>Documentation</li>
-                <li>Proofreading</li>
-                <li>Teamwork</li>
-                <li>Testing</li>
-                <li>Troubleshooting</li>
-                <li>Writing comments</li>
-            </ul>
+            <div id="list-of-skills">
+                <h3>Front-end skills</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>JQuery</li>
+                    <li>Responsive design</li>
+                    <li>React</li>
+                    <li>Bootstrap</li>
+                </ul>
+                <h3>Back-end skills</h3>
+                <ul>
+                    <li>APIs</li>
+                    <li>Node</li>
+                    <li>Express</li>
+                    <li>MySQL, Sequelize</li>
+                    <li>MongoDB, Mongoose</li>
+                    <li>REST</li>
+                    <li>GraphQL</li>
+                </ul>
+                <h3>General skills</h3>
+                <ul>
+                    <li>Asking questions</li>
+                    <li>Documentation</li>
+                    <li>Proofreading</li>
+                    <li>Teamwork</li>
+                    <li>Testing</li>
+                    <li>Troubleshooting</li>
+                    <li>Writing comments</li>
+                </ul>
+            </div>
         </div>
     );
 }

@@ -119,7 +119,7 @@ body {
   border-radius: var(--border-radius);
 }
 
-#about-me-paragraph {
+#about-me-paragraph, #list-of-skills {
   background-color: var(--fire-brick);
   padding: 5px;
   border: var(--border);
@@ -180,6 +180,11 @@ body {
 
 .downloadBtn:hover {
   background-color: var(--falu-red);
+}
+
+#list-of-skills {
+  margin-top: 20px;
+  /* separate the list of skills from the resume download button */
 }
 
 .contentContainer {
